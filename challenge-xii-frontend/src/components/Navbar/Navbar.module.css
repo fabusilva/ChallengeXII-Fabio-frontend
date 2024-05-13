@@ -25,6 +25,7 @@
 .navbarText{
     font-size: 16px;
     font-weight: 400;
+    color: #FFFFFF;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -34,6 +35,8 @@
 }
 .navbarUser{
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 30px;
     gap: 20px;
 }
@@ -49,75 +52,55 @@
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
-.navbarBtResponsivo{
-    display: none;
-}
 
 @media (max-width:414px) {
-    .navbarBtResponsivo{
-        display: block;
-        margin-right: 30px;
+    .navbarContainer{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .navbarLogo{
+        height: 25px;
+        width: 53px;
+    }
+    .navbarText{
+        font-size: 12px;
+    }
+    .navbarItems li{
+        margin-left: 10px;
     }
     .navbarUser{
-        display: none;
+        gap: 5px;
+        margin-right: 10px;
     }
-    .navbarItems{
-        display: none;
+    .navbarUserIcon{
+        height: 15px;
+        width: 17px;
     }
-    .popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        box-sizing: border-box;
-        max-width: 100%;
-        max-height: 100%;
-        overflow-y: auto;
+    .navbarUserAvatar{
+        height: 23px;
+        width: 27px;
     }
-    
-    .closeButton {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: red;
-        color: #fff;
-        border: none;
-        cursor: pointer;
+}
+@media (min-width: 415px) and (max-width:638px){
+    .navbarLogo{
+        height: 30px;
+        width: 63px;
     }
-    
-    .popupItems {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        border-radius: 5px;
+    .navbarText{
+        font-size: 14px;
     }
-    
-    .popupText {
-        font-size: 16px;
-        font-weight: 400;
-        cursor: pointer;
-        transition: transform 0.2s ease-in-out;
-        margin-bottom: 10px;
+    .navbarItems li{
+        margin-left: 20px;
     }
-    
-    .popupText:hover {
-        color: #fba403;
-        transform: scale(1.05);
+    .navbarUser{
+        gap: 10px;
     }
-    
-    .show {
-        display: block !important;
+    .navbarUserIcon{
+        height: 20px;
+        width: 22px;
     }
-    
+    .navbarUserAvatar{
+        height: 28px;
+        width: 32px;
+    }
 }
