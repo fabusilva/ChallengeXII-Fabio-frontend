@@ -12,6 +12,9 @@ export default function CardSessionTwo({title,text,url}:CardSessionTwoProps){
             <Image src={url} width={307} height={214} alt="img"/>
             <h1 className={style.cardTitle}>{title}</h1>
             <p className={style.cardText}>{text}</p>
+            <div className={style.buttonContainer}>
+                <button className={style.cardButton}>Learn more</button>
+            </div>
         </div>
     )
 }
