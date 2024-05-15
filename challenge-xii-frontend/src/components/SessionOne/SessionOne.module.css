@@ -1,7 +1,53 @@
+.sessionOne{
+    margin: 74px 89px;
+}
 .SessionContainer{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 74px;
+    margin-bottom: 74px;
+}
+.imageContainer{
+    flex: 1;
+}
+.imageContainer .image{
+    width: 610px;
+    height: 593.73px;
+}
+.formContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.formHeader{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+.textHeader{
+    font-size: 50px;
+    font-weight: 700;
+}
+.spanMyHeader{
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 2.5px;
+    color: #FBA403;
+}
+.spanRideHeader{
+    color: #FBA403;
 }
 
-.txt{
-    color: red;
+.sessionForm{
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    height: 355px;
+    border-radius: 4px;
+    padding: 30px 33px;
+    gap: 16px;
+    background-color: #2C2C2C;
 }
