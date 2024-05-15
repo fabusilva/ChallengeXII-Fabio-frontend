@@ -10,7 +10,7 @@ export default function ButtonSubmit({ text, url }: ButtonProps) {
     if (url) {
         return (
             <button className={style.button}>
-                <Image src={url} alt="img" />
+                <Image className={style.imageButton} src={url} alt="img" width={17.49} height={17.49}/>
                 {text}
             </button>
         );
