@@ -1,0 +1,32 @@
+.inputContainer{
+    background: #2C2C2C;
+   
+}
+.inputStyle{
+    width: 544px;
+    height: 60px;
+    gap: 3px;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #FFFFFF3B;
+    color: #FFFFFF;
+    background: transparent;
+    outline: none;
+}
+.inputStyle::placeholder{
+    color: #FFFFFF;
+    
+
+}
+.labelForm{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 16px;
+    bottom: -9px;
+    font-size: 12px;
+    color: #FFFFFFB2;
+    background-color: #2C2C2C;
+}
