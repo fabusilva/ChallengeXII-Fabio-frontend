@@ -1,3 +1,30 @@
+.sessionTwoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sessionTwoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
 .txt{
-    color: brown;
+    margin-top: 0;
+    font-size: 26px;
+    color: #FBA403;
+}
+.title{
+    margin-top: 8px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.sessionTwoCards{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 70px;
 }
