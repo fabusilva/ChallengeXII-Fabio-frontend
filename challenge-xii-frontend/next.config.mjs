@@ -4,7 +4,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['fakeimg.pl', 'cdn-icons-png.flaticon.com'],
+    domains: ['challengexiifabio.s3.amazonaws.com'],
   },
 };
 
