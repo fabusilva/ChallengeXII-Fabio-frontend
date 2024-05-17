@@ -2,11 +2,17 @@ import Image from "next/image";
 import style from "./SessionOne.module.css";
 import ButtonSubmit from "../_ui/ButtonSubmit/ButtonSubmit";
 import InputForm from "../_ui/InputForm/InputForm";
+import { useRouter } from 'next/router';
 
 export default function SessionOne() {
   const img: string =
     "https://challengexiifabio.s3.amazonaws.com/Imagens/Sess%C3%A3o+1/Image.png";
   const icon:string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Sess%C3%A3o+1/%E2%86%B3Color.png';
+  const router = useRouter();
+
+  const redirectionPage = () =>{
+    router.push("./NotFound")
+  }
   return (
     <div className={style.sessionOne}>
       <div className={style.SessionContainer}>
@@ -40,7 +46,7 @@ export default function SessionOne() {
               name="destination"
               typeInput="text"
             />
-            <ButtonSubmit text="find a driver" url={icon}/>
+            <ButtonSubmit text="find a driver" onclickProps={redirectionPage} url={icon}/>
           </form>
         </div>
       </div>
