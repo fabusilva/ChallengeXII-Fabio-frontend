@@ -1,4 +1,6 @@
 .sessionTwoContainer{
+    margin-top: 59px;
+    margin-bottom: 101px;
     display: flex;
     flex-direction: column;
     justify-content: center;
