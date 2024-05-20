@@ -1,0 +1,11 @@
+.selectContainer{
+    background: #2C2C2C;
+}
+.selectStyle{
+    height: 57px;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
