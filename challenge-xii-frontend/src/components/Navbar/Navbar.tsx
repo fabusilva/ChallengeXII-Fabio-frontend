@@ -2,10 +2,10 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import style from './Navbar.module.css';
 export default function Navbar() {
-    const logo:string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Navbar/Logo.png';
-    const sino:string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Navbar/bell-icon.png';
-    const avatar: string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Navbar/user-avatar.png';
-    const separato: string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Navbar/seperator.png';
+    const logo:string = process.env.NEXT_PUBLIC_NAVBAR_LOGO;
+    const sino:string = process.env.NEXT_PUBLIC_NAVBAR_BELL;
+    const avatar: string = process.env.NEXT_PUBLIC_NAVBAR_USER;
+    const separato: string = process.env.NEXT_PUBLIC_NAVBAR_SEPARATOR;
     const router = useRouter();
     const redirectionPage = () =>{
         router.push("./NotFound")
