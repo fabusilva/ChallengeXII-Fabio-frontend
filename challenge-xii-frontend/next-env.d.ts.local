@@ -1,0 +1,32 @@
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.
+declare namespace NodeJS {
+    interface ProcessEnv {
+      NEXT_PUBLIC_NAVBAR_BELL: string;
+      NEXT_PUBLIC_NAVBAR_LOGO: string;
+      NEXT_PUBLIC_NAVBAR_SEPARATOR: string;
+      NEXT_PUBLIC_NAVBAR_USER: string;
+      NEXT_PUBLIC_SESSION_ONE_SEARCH: string;
+      NEXT_PUBLIC_SESSION_ONE_BANNER: string;
+      NEXT_PUBLIC_SESSION_ONE_X: string;
+      NEXT_PUBLIC_SESSION_ONE_X_FOCUS: string;
+      NEXT_PUBLIC_SESSION_TWO_BASIC: string;
+      NEXT_PUBLIC_SESSION_TWO_CONFORT: string;
+      NEXT_PUBLIC_SESSION_TWO_BUSINESS: string;
+      NEXT_PUBLIC_SESSION_TWO_DELUXE: string;
+      NEXT_PUBLIC_SESSION_THREE_CHECK: string;
+      NEXT_PUBLIC_SESSION_THREE_ERROR: string;
+      NEXT_PUBLIC_SESSION_THREE_BANNER: string;
+      NEXT_PUBLIC_SESSION_THREE_SUV: string;
+      NEXT_PUBLIC_SESSION_THREE_SEMI_LUXURY: string;
+      NEXT_PUBLIC_SESSION_THREE_LUXURY: string;
+      NEXT_PUBLIC_SESSION_THREE_SEDAN: string;
+      NEXT_PUBLIC_FOOTER_LOGO: string;
+      NEXT_PUBLIC_FOOTER_FECEBOOK: string;
+      NEXT_PUBLIC_FOOTER_INSTAGRAM: string;
+      NEXT_PUBLIC_FOOTER_TWITTER: string;
+    }
+}
