@@ -1,3 +1,43 @@
-.txt{
-    color: blue;
+.footerContainer{
+    display: flex;
+    margin-left: 40px;
+    color: #FFFFFF;
+}
+.homeFooter{
+    margin-right: 80px;
+    margin-bottom: 47px;
+}
+.homeFooter p{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #B3B3B3;
+}
+.socialFooter{
+    display: flex;
+    gap: 24px;
+}
+.companyFooter{
+    width: 183.33px;
+    height: 159.76px;
+    margin-right: 20px;
+}
+.suporteFooter{
+    width: 183.33px;
+    height: 159.76px;
+    margin-right: 20px;
+}
+.moreFooter{
+    width: 183.33px;
+    height: 159.76px;
+    margin-right: 20px;
+}
+.titleFooter{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.textFooter{
+    font-size: 16px;
+    margin-bottom: 12px;
 }
