@@ -3,16 +3,59 @@ import style from "./SessionOne.module.css";
 import ButtonSubmit from "../_ui/ButtonSubmit/ButtonSubmit";
 import InputForm from "../_ui/InputForm/InputForm";
 import { useRouter } from 'next/router';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function SessionOne() {
-  const img: string =
-    "https://challengexiifabio.s3.amazonaws.com/Imagens/Sess%C3%A3o+1/Image.png";
-  const icon:string = 'https://challengexiifabio.s3.amazonaws.com/Imagens/Sess%C3%A3o+1/%E2%86%B3Color.png';
+  const img = process.env.NEXT_PUBLIC_SESSION_ONE_BANNER;
+  const icon = process.env.NEXT_PUBLIC_SESSION_ONE_SEARCH;
+
+  const [ipLocation, setIpLocation] = useState("");
+  const [destination, setDestination] = useState("");
+  const [error, setError] = useState("");
+
+  const clearIpLocation = () => setIpLocation("");
+  const clearDestination = () => setDestination("");
+
   const router = useRouter();
 
-  const redirectionPage = () =>{
-    router.push("./NotFound")
-  }
+  const redirectionPage = (event:any) => {
+    event.preventDefault();
+    if (!ipLocation && !destination) {
+      setError("Os campos do formulário estão vazios");
+    } else if (!ipLocation) {
+      setError("O campo Your Pickup está vazio");
+    } else if (!destination) {
+      setError("O campo Your Destination está vazio");
+    } else {
+      setError("");
+      router.push("./NotFound");
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    if (name === "ipLocation") {
+      setIpLocation(value);
+    } else if (name === "destination") {
+      setDestination(value);
+    }
+  };
+
+  const fetchIP = async () => {
+    try {
+      const response = await fetch("/api/getIp");
+      const data = await response.json();
+      setIpLocation(data.city);
+    } catch (error) {
+      console.log("Erro ao buscar IP: " + error);
+    }
+  };
+
+  useEffect(() => {
+    fetchIP();
+  }, []);
+
   return (
     <div className={style.sessionOne}>
       <div className={style.SessionContainer}>
@@ -33,20 +76,27 @@ export default function SessionOne() {
               <span className={style.spanRideHeader}>RIDE</span> now!
             </p>
           </div>
-          <form className={style.sessionForm}>
+          <form className={style.sessionForm} onSubmit={redirectionPage}>
             <h1>Find a ride now</h1>
             <InputForm
               text="Your Pickup"
+              value={ipLocation}
               typeInput="text"
               name="ipLocation"
               placeholder="Current Location"
+              handleOnChange={handleChange}
+              limparInput={clearIpLocation}
             />
             <InputForm
               text="Your Destination"
+              value={destination}
               name="destination"
               typeInput="text"
+              handleOnChange={handleChange}
+              limparInput={clearDestination}
             />
-            <ButtonSubmit text="find a driver" onclickProps={redirectionPage} url={icon}/>
+            {error && <p className={style.error}>{error}</p>}
+            <ButtonSubmit text="find a driver" onclickProps={redirectionPage} url={icon} />
           </form>
         </div>
       </div>

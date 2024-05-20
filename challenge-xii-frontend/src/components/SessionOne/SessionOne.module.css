@@ -27,7 +27,7 @@
 .formHeader{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 26px;
 }
 .textHeader{
@@ -57,6 +57,13 @@
 .sessionForm h1{
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 30px;
     color: #FFFFFF;
+    background-color: transparent;
+}
+.error{
+    font-size: 14px;
+    font-weight: 500;
+    color: #FBA403;
     background-color: transparent;
 }
