@@ -31,3 +31,7 @@ renomeie os arquivos .env.local para .env e next-env.d.ts.local para next-env.d.
 ```bash
 npm run dev
 ```
+
+## resultado final
+
+![localhost_3000_](https://github.com/fabusilva/ChallengeXII-Fabio-frontend/assets/106494125/a112ac97-d83e-4685-ad96-573fe56bb3ee)
