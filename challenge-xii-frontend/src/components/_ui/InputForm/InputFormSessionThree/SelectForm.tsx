@@ -1,25 +1,44 @@
 import style from "./SelectForm.module.css";
 
-interface SelectPros {
-  name?: string;
+interface SelectProps {
+  name: string;
   text?: string;
-  value?: string;
+  placeholder: string;
+  value: string;
   options?: string[];
-  handleOnChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  disable?: boolean;
+  handleOnChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
+
 export default function SelectForm({
   name,
   text,
   value,
+  placeholder,
   options,
+  disable,
   handleOnChange,
-}: SelectPros) {
+}: SelectProps) {
   return (
     <div className={style.selectContainer}>
-      <label className={style.labelSelect}>{text}</label>
-      <select className={style.selectStyle} name={name} id={name}>
-        <option value="" key="">{text}</option>
-      </select>
+      <div className={style.formatSelect}>
+          <select
+            className={style.selectStyle}
+            name={name}
+            id={name}
+            value={value}
+            disabled={disable}
+            onChange={handleOnChange}
+          >
+            <option className={style.selectOption} value="">{placeholder}</option>
+            {options?.map((option, index) => (
+              <option className={style.selectOption} key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          <label className={style.labelSelect} htmlFor={name}>{text}</label>
+      </div>
     </div>
   );
 }

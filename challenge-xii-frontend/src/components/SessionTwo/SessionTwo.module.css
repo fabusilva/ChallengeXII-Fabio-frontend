@@ -30,3 +30,72 @@
     gap: 24px;
     margin: 0 70px;
 }
+@media (max-width:1440px) and (min-width:415px){
+    .sessionTwoContainer{
+        margin-top: 59px;
+        margin-bottom: 101px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sessionTwoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .txt{
+        margin-top: 0;
+        font-size: 26px;
+        color: #FBA403;
+    }
+    .title{
+        margin-top: 8px;
+        font-size: 45px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .sessionTwoCards{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 0 70px;
+    }
+}
+@media (max-width:414px) {
+    .sessionTwoContainer{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sessionTwoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .txt{
+        margin-top: 0;
+        font-size: 16px;
+        color: #FBA403;
+    }
+    .title{
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .sessionTwoCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 0 70px;
+    }
+}

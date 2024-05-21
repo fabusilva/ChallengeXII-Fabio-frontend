@@ -41,3 +41,94 @@
     font-size: 16px;
     margin-bottom: 12px;
 }
+@media (max-width:414px) {
+    .footerContainer{
+        display: flex;
+        width: 100%;
+        margin-left: 10px;
+        color: #FFFFFF;
+    }
+    .homeFooter{
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+    .homeFooter p{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 8px;
+        color: #B3B3B3;
+    }
+    .socialFooter{
+        display: flex;
+        gap: 10px;
+    }
+    .companyFooter{
+        width: 100%;
+        height: 100px;
+        margin-right: 5px;
+    }
+    .suporteFooter{
+        width: 100%;
+        height: 100px;
+        margin-right: 5px;
+    }
+    .moreFooter{
+        width: 100%;
+        height: 100px;
+        margin-right: 5px;
+    }
+    .titleFooter{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .textFooter{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width:1440px) and (min-width:415px) {
+    .footerContainer{
+        display: flex;
+        margin-left: 40px;
+        color: #FFFFFF;
+    }
+    .homeFooter{
+        margin-right: 80px;
+        margin-bottom: 47px;
+    }
+    .homeFooter p{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        color: #B3B3B3;
+    }
+    .socialFooter{
+        display: flex;
+        gap: 24px;
+    }
+    .companyFooter{
+        width: 183.33px;
+        height: 159.76px;
+        margin-right: 20px;
+    }
+    .suporteFooter{
+        width: 183.33px;
+        height: 159.76px;
+        margin-right: 20px;
+    }
+    .moreFooter{
+        width: 183.33px;
+        height: 159.76px;
+        margin-right: 20px;
+    }
+    .titleFooter{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .textFooter{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}

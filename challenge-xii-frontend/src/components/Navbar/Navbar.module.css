@@ -17,19 +17,24 @@
     display: inline-flex;
 }
 .navbarItems li{
-    display: block;
+    display: inline-block;
     margin-left: 30px;
+    padding-bottom: 20px;
+    position: relative;
 }
 .navbarText{
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
     cursor: pointer;
+    display: inline-block;
     transition: transform 0.2s ease-in-out;
+    
 }
 .navbarText:hover{
     color:#FBA403;
-    transform: scale(1.050);
+    box-shadow: 0 2px 0 0 #FBA403;
+    
 }
 .navbarUser{
     display: flex;

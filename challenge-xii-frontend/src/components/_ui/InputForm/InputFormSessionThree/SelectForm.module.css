@@ -1,5 +1,6 @@
 .selectContainer{
-    background: #2C2C2C;
+    position: relative;
+    background-color: #282828;
 }
 .selectStyle{
     height: 57px;
@@ -8,4 +9,28 @@
     background: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
+    background: transparent;
+    color: #FFFFFF;
+    padding-left: 15px;
+    outline: none;
+    display: inline-block;
+    position: relative;
+}
+.selectStyle:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+.selectOption{
+    background-color: #282828;
+}
+.labelSelect{
+    position: absolute; 
+    margin: 0;
+    padding: 0;
+    left: 16px;
+    top: -6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #282828;
 }

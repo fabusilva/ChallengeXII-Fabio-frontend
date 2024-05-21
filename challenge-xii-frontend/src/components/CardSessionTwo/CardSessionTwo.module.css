@@ -1,9 +1,16 @@
-.cardContainer{
-    height: 394px;
-    width: 307px;
+.cardContainer {
+    height: 395px;
+    width: 308px;
     background: #383838;
+    transition: transform 0.2s ease-in-out;
+    position: relative; 
 }
-.cardTitle{
+.cardContainer:hover {
+    box-shadow: 1px 1px 5px rgba(211, 199, 199, 0.5);
+    transform: scale(1.050);
+}
+
+.cardTitle {
     margin-top: 14px;
     margin-left: 15px;
     font-size: 16px;
@@ -11,24 +18,24 @@
     color: #FFFFFF;
     background: transparent;
 }
-.cardText{
+.cardText {
     margin-top: 6px;
     margin-left: 15px;
     font-size: 16px;
     color: #B3B3B3;
     background: transparent;
 }
-.buttonContainer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.buttonContainer {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
     background-color: transparent;
 }
-.cardButton{
-    margin-right: 27px;
+.cardButton {
     font-size: 14px;
     font-weight: 500;
     border: none;
     color: #FBA403;
     background-color: #383838;
+    cursor: pointer; 
 }
