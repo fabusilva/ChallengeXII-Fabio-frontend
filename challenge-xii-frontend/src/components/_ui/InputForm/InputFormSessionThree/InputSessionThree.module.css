@@ -1,0 +1,48 @@
+.inputSessionThreeContainer{
+    position: relative;
+    height: 57px;
+    width: 100%;
+    background-color: #282828;
+}
+.formatInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+}
+.inputSessionThreeStyle{
+    height: 57px;
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+.inputSessionThreeStyle::placeholder{
+    color:#666666DE;
+}
+.inputSessionThreeStyle:focus{
+    border: 1px solid #FBA403;
+    color: #FBA403;
+}
+.imgSessionThreeContainer {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.imgInput {
+    background: transparent;
+    cursor: pointer;
+    z-index: 4;
+}

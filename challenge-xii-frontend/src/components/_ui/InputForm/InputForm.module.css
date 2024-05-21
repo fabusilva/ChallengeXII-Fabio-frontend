@@ -1,0 +1,66 @@
+.inputContainer {
+    background: #2C2C2C;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.inputStyle {
+    width: 100%;
+    height: 58px;
+    gap: 3px;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #FFFFFF3B;
+    color: #FFFFFF;
+    background: transparent;
+    outline: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.inputStyle::placeholder {
+    color: #FFFFFF;
+}
+.inputStyle:focus{
+    border: 1px solid #FBA403;
+    color: #FBA403;
+}
+.inputStyle:focus + .labelForm {
+    color: #FBA403;
+}
+.labelForm {
+    position: absolute; 
+    margin: 0;
+    padding: 0;
+    left: 16px;
+    top: -6px;
+    font-size: 12px;
+    color: #FFFFFFB2;
+    background-color: #2C2C2C;
+    z-index: 2; 
+}
+
+.formatInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.imgInput {
+    background: transparent;
+    cursor: pointer;
+    z-index: 4;
+}

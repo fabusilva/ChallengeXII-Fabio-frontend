@@ -1,0 +1,45 @@
+.notFoundContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notFoundCard {
+    width: 450px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+.notFoundCard h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.notFoundCard p {
+    color: #FFFFFF; 
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.notFoundCard a {
+    color: #FBA403;
+    text-decoration: none;
+    font-weight: 500; 
+    background-color: transparent;
+}
+
+.notFoundCard a:hover {
+    text-decoration: underline;
+}
